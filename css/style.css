@@ -1,0 +1,157 @@
+/* This is the currnet CSS style, with all design matching the mock up*/
+
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* yellow highlight for the hover effect */
+a:hover {
+  background-color: yellow;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  /* defining the cards behavoir */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.row-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-basis: 100px;
+}
+
+.column-header {
+  /* defining the cards behavoir */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.header {
+  flex-basis: 100px;
+}
+
+.navbar {
+  border-bottom: 5px solid black;
+  margin-top: 100px;
+  float: right;
+}
+
+#divider {
+  position: relative;
+  top: 800px;
+  left: 9px;
+  width: 50;
+  text-align: center;
+  margin: 0 0 0 0;
+  border-bottom: 1px solid #888888;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+}
+
+.cards {
+  display: table;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards:hover {
+  background-color: yellow;
+}
+
+/* resizing the store logo */
+.store-logo {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+
+.item-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #555;
+}
+
+#detail-item-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #555;
+}
+
+.page-button {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.item-price {
+  text-align: center;
+}
+
+#add-price {
+  margin-right: 100px;
+}
+
+#header-text {
+  font-size: 24px;
+  margin-top: -100px;
+}
+
+#checkout-line {
+  width: 50%;
+}
+
+/* style for buttons on all three page */
+#add-button {
+  position: block;
+  margin-left: 100px;
+  bottom: 30px;
+  color: black;
+  border-style: solid;
+}
+
+#checkout-button {
+  border: 3px solid #555;
+}

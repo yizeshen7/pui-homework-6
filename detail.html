@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- creates head and add in the css style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script defer src="app.js"></script>
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <div class="row-header">
+      <div class="column-header">
+        <div class="header">
+          <!-- this defines the header logo -->
+          <a href="index.html"
+            ><img class="store-logo" src="assets/logo-01.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="column-header">
+        <div class="navbar">
+          <!-- nav bar for products and cart pages -->
+          <ul>
+            <li>
+              <div class="page-button">
+                <a href="index.html">PRODUCTS</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="page-button">
+                <a href="cart.html">CART</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p id="header-text">Our hand-made cinnamon rolls</p>
+
+    <div class="detail-items">
+      <!-- list of items along with selection of preferences -->
+
+      <div class="cards-checkout">
+        <p id="detail-item-name">Original cinnamon roll</p>
+        <div class="row">
+          <div class="column">
+            <img id="detail-item-image" src="assets/original-cinnamon-roll.jpg" />
+          </div>
+
+          <div class="column">
+            <p class="item-text">
+              Customize our delicious,hand-made cinammon roll to your liking!
+            </p>
+
+            <p>Glazing</p>
+            <select class="select" id="glazing">
+              <option item-price="0" value="0">Keep Original</option>
+              <option item-price="0" value="1">Sugar Milk</option>
+              <option item-price="0.5" value="2">Vanilla Milk</option>
+              <option item-price="1.5" value="3">Double Chocolate</option>
+            </select>
+
+            <p>Pack Size</p>
+            <select class="select" id="packSize">
+              <option item-price="1" value="0">1</option>
+              <option item-price="3" value="1">3</option>
+              <option item-price="5" value="2">6</option>
+              <option item-price="10" value="3">12</option>
+            </select>
+
+          <div class="add-wrapper">
+            <p id="totalPrice">$2.49</p>
+            <a id="add-button" onclick = "addToCart()">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

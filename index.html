@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- creates head and add in the css style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>PUI Homework 2</title>
+  </head>
+
+  <body>
+    <div class="row-header">
+      <div class="column-header">
+        <div class="header">
+          <!-- this defines the header logo -->
+          <a href="index.html"
+            ><img class="store-logo" src="assets/logo-01.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="column-header">
+        <div class="navbar">
+          <!-- nav bar for products and cart pages -->
+          <ul>
+            <li>
+              <div class="page-button">
+                <a href="index.html">PRODUCTS</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="page-button">
+                <a href="cart.html">CART</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p id="header-text">Our hand-made cinnamon rolls</p>
+
+    <div class="bakery-items">
+      <!-- list of bakery items with image, name and price -->
+      <div class="row">
+        <div class="column">
+          <a href="/detail.html?roll=Original"
+            ><div
+              class="cards"
+              onclick="location.href='/detail.html?roll=Original'"
+            >
+              <img class="item-image" src="assets/original-cinnamon-roll.jpg" />
+              <p class="item-name">Original cinnamon roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+
+        <div class="column">
+          <a href="/detail.html?roll=Apple"
+            ><div class="cards">
+              <img class="item-image" src="assets/apple-cinnamon-roll.jpg" />
+              <p class="item-name">Apple cinnamon roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+
+        <div class="column">
+          <a href="/detail.html?roll=Raisin"
+            ><div class="cards">
+              <img class="item-image" src="assets/raisin-cinnamon-roll.jpg" />
+              <p class="item-name">Rasin cinnamon roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <a href="/detail.html?roll=Walnut"
+            ><div class="cards">
+              <img class="item-image" src="assets/walnut-cinnamon-roll.jpg" />
+              <p class="item-name">Walnut cinnamon roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+
+        <div class="column">
+          <a href="/detail.html?roll=Double-Chocolate"
+            ><div class="cards">
+              <img
+                class="item-image"
+                src="assets/double-chocolate-cinnamon-roll.jpg"
+              />
+              <p class="item-name">Double Chocolate Cinnamon Roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+
+        <div class="column">
+          <a href="/detail.html?roll=Strawberry"
+            ><div class="cards">
+              <img
+                class="item-image"
+                src="assets/strawberry-cinnamon-roll.jpg"
+              />
+              <p class="item-name">Starwberry Cinnamon Roll</p>
+              <p class="item-price">$2.49</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

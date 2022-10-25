@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- creates head and add in the css style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="app-cart.js"></script>
+    <title>Cart</title>
+  </head>
+
+  <body>
+    <div class="row-header">
+      <div class="column-header">
+        <div class="header">
+          <!-- this defines the header logo -->
+          <a href="index.html"
+            ><img class="store-logo" src="assets/logo-01.svg" />
+          </a>
+        </div>
+      </div>
+
+      <div class="column-header">
+        <div class="navbar">
+          <!-- nav bar for products and cart pages -->
+          <ul>
+            <li>
+              <div class="page-button">
+                <a href="index.html">PRODUCTS</a>
+              </div>
+            </li>
+
+            <li>
+              <div class="page-button">
+                <a href="cart.html">CART</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p id="header-text">Our hand-made cinnamon rolls</p>
+    <div class="checkout-items">
+      <!-- items created for checkout -->
+
+      <p>Shopping Cart</p>
+
+      <template id="template-item">
+        <div class="cards-checkout">
+          <div class="row">
+            <div class="column">
+              <img
+                class="item-image"
+                id="item-image"
+                src="assets/original-cinnamon-roll.jpg"
+              />
+            </div>
+            <div class="column">
+              <p class="item-name">Original cinnamon roll</p>
+              <p class="item-text">Glazing: Keep original</p>
+              <p class="item-text">Pack Size: 1</p>
+            </div>
+            <div class="column">
+              <p class="item-text">$2.49</p>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <div class="cards-checkout">
+        <div class="row">
+          <div class="column">
+            <img
+              class="item-image"
+              src="assets/double-chocolate-cinnamon-roll.jpg"
+            />
+          </div>
+          <div class="column">
+            <p class="item-name">Double Chocolate Cinnamon Roll</p>
+            <p class="item-text">Glazing: Keep original</p>
+            <p class="item-text">Pack Size: 6</p>
+          </div>
+          <div class="column">
+            <p class="item-text">$27.45</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="checkout-wrapper">
+      <hr id="checkout-line" />
+      <p id="totalPrice">Total: $29.94</p>
+      <a id="checkout-button" href="index.html">Checkout</a>
+    </div>
+  </body>
+</html>
