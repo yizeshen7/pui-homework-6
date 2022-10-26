@@ -17,7 +17,7 @@ function displayCart() {
       "Glazing: " + cart[i].galzing + " "
     );
     const size = document.createTextNode("Size: " + cart[i].size + " ");
-    const price = document.createTextNode("Price: " + cart[i].basePrice + " ");
+    const price = document.createTextNode("Price: " + cart[i].basePrice + "  ");
     var image = document.createElement("img");
     image.src = "assets/original-cinnamon-roll.jpg";
     image.style =
