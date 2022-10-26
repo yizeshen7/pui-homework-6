@@ -12,11 +12,11 @@ function displayCart() {
     var childData = document.createElement("div");
     childData.className = "column";
 
-    const name = document.createTextNode("Type: " + cart[i].type + " ");
+    const name = document.createTextNode("Type: " + cart[i].type + "  ");
     const glazing = document.createTextNode(
       "Glazing: " + cart[i].galzing + " "
     );
-    const size = document.createTextNode("Size: " + cart[i].size + " ");
+    const size = document.createTextNode("Size: " + cart[i].size + "  ");
     const price = document.createTextNode("Price: " + cart[i].basePrice + "  ");
     var image = document.createElement("img");
     image.src = "assets/original-cinnamon-roll.jpg";
