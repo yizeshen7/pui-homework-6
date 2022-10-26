@@ -1,5 +1,5 @@
-# PUI homework 5
+# PUI homework 6
 
-Deployed website: http://yize.blog/pui-homework-5/index.html
+Deployed website: http://yize.blog/pui-homework-6/index.html
 
-Repository link: https://github.com/yizeshen7/pui-homework-5
+Repository link: https://github.com/yizeshen7/pui-homework-6
