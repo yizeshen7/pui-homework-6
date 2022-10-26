@@ -106,6 +106,8 @@ function addToCart() {
   let newRoll = new Roll(rollType, rollGlazing, amount, rollBasePrice);
 
   cart.push(newRoll);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("this is local", JSON.parse(localStorage.getItem("cart")));
 }
 
 function displayCart() {

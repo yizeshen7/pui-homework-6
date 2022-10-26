@@ -148,17 +148,15 @@ cart.push(a, b, c, d);
 function addToCart() {
   let newRoll = new Roll(rollType, rollGlazing, amount, rollBasePrice);
 
-  console.log(newRoll);
-  console.log(cart);
+  cart.push(newRoll);
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("this is local", JSON.parse(localStorage.getItem("cart")));
 }
 
 function displayCart() {
   // let template = document.getElementById("test-test");
   let template = document.getElementsByTagName("template")[0];
-  console.log(template);
-  // let templateContent = template.content;
-  // document.body.appendChild(templateContent);
-  console.log(":here");
 }
 
 let selectElementGlazing = document.querySelector("#glazing");
