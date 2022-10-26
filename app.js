@@ -81,13 +81,13 @@ function onSelectValueChangeGlazing() {
   // In this function, `this` corresponds to the select
   // element. So `this.value` will contain the value of the
   // selected option as a string.
-  console.log("You selected " + this.value);
 
   // We need to convert the string value to an integer
   let rollIndex = parseInt(this.value);
 
   // Now retrieve the object at the index specified by the select's value
   let rollToDisplay = allRolls[rollIndex];
+  rollGlazing = rollToDisplay.glazing;
 
   price = rollToDisplay.price;
 
@@ -117,9 +117,6 @@ let cart = [];
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll") || "Original";
-console.log("this is rolls", rolls);
-console.log("this is rolltype", rollType);
-console.log("this is test", rolls["Original"].basePrice);
 let rollBasePrice = rolls[rollType].basePrice;
 
 function updateDetail() {
@@ -147,18 +144,8 @@ cart.push(a, b, c, d);
 
 function addToCart() {
   let newRoll = new Roll(rollType, rollGlazing, amount, rollBasePrice);
-
   cart.push(newRoll);
-
   localStorage.setItem("cart", JSON.stringify(cart));
-  console.log("this is local", JSON.parse(localStorage.getItem("cart")));
-}
-
-function displayCart() {
-  let template = document.getElementsByTagName("template")[0];
-
-  
-
 }
 
 let selectElementGlazing = document.querySelector("#glazing");
@@ -168,4 +155,3 @@ selectElementGlazing.addEventListener("change", onSelectValueChangeGlazing);
 selectElementAmount.addEventListener("change", onSelectValueChangeAmount);
 
 updateDetail();
-displayCart();
