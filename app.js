@@ -155,8 +155,10 @@ function addToCart() {
 }
 
 function displayCart() {
-  // let template = document.getElementById("test-test");
   let template = document.getElementsByTagName("template")[0];
+
+  
+
 }
 
 let selectElementGlazing = document.querySelector("#glazing");
